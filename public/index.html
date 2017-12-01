@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="description" content="WebVR playground">
         <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     </head>
     <body>
         <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+            <a-entity position="0 2.25 0" particle-system="preset: rain"></a-entity>
             <a-entity rotation="0 0 0">
                 <a-sky geometry="radius: 20" color="#25013a"></a-sky>
                 <a-light type="point" position="0 2 -15" intensity="2" color="#ffe1b3"></a-light>
